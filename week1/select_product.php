@@ -15,11 +15,7 @@
     <?php
     include("../include/connect_db.php");
     $result=mysqli_query($con,"SELECT  product_id,product_title,product_sprice FROM products");
-    echo "<table bordgit init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/tanakornpa58/Dbapp61.git
-git push -u origin masterer=1>";
+    echo "<table border=1>";
     echo "<tr><th>รหัสสินค้า</th><th>ชื่อสินค้า</th><th>ราคาสินค้า</th></tr>";
     while(list($product_id,$product_title,$product_sprice)=mysqli_fetch_row($result)){
 
